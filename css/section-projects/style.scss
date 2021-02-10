@@ -7,10 +7,8 @@
     //
   }
   &__projectList {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    justify-items: center;
     gap: 2rem;
   }
 }
