@@ -1,0 +1,58 @@
+name: Build & Deploy to Github-Hosting
+
+on:
+  push:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+
+    steps:
+      # Check out the current repository code
+      - uses: actions/checkout@v2
+
+      # Setup node (REF: https://github.com/actions/setup-node#usage )
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+
+      - name: Set yarn-cache-directory path
+        id: yarn-cache-dir
+        run: echo "::set-output name=dir::$(yarn cache dir)" # この記法でdir::<hoge>で、dir変数にhogeを代入
+
+      - name: Get yarn cache packages
+        uses: actions/cache@v1
+        id: yarn-cache
+        with:
+          path: ${{ steps.yarn-cache-dir.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+
+      - name: Public Folder
+        uses: actions/cache@v1
+        id: svelte-public-folder
+        with:
+          path: public/
+          key: ${{ runner.os }}-public-svelte
+          restore-keys: |
+            ${{ runner.os }}-public-svelte
+
+      - name: Install packages
+        run: yarn install --frozen-lockfile
+
+      # - name: Test
+      #   run: yarn test --color
+      #   env:
+      #     CI: true
+
+      - name: Build
+        run: yarn run build
+
+      - name: Deploy to github-hosting
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./
