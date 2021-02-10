@@ -35,7 +35,7 @@ jobs:
         uses: actions/cache@v1
         id: svelte-public-folder
         with:
-          path: public/
+          path: ./
           key: ${{ runner.os }}-public-svelte
           restore-keys: |
             ${{ runner.os }}-public-svelte
