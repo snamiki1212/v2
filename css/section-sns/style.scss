@@ -10,6 +10,13 @@
   z-index: 999; // NOTE: TOP position
   & > a {
     font-size: 1.5rem;
+    background: var(--black);
+    opacity: 0.7;
+    border-radius: 100%;
+    padding: 0.5rem;
+    &:hover {
+      opacity: 1;
+    }
   }
 
   & > a:nth-child(1) {
