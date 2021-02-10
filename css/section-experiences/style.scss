@@ -1,7 +1,13 @@
 .section-experiences {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   &__content {
     padding: 2rem;
     border: 1px solid var(--cyan-transparent-05);
+  }
+  &__bottom {
+    text-align: center;
   }
 }
 
