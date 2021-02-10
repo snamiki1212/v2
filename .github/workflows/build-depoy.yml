@@ -52,8 +52,7 @@ jobs:
         run: yarn run build
 
       - name: Cd to publish folder
-        run: mkdir public
-        run: mv index.html assets css scripts public
+        run: mkdir public && mv index.html assets css scripts public
 
       - name: Deploy to github-hosting
         uses: peaceiris/actions-gh-pages@v3
