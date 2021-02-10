@@ -1,0 +1,18 @@
+.section-experiences {
+  &__content {
+    padding: 1rem;
+    border: 1px solid var(--cyan-transparent-05);
+  }
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  &__item {
+    padding: 2rem;
+    border: 1px solid var(--cyan-transparent-05);
+    background: var(--cyan-transparent-01);
+  }
+}

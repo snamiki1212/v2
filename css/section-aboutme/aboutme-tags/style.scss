@@ -1,0 +1,8 @@
+.aboutme-tags {
+  padding: 2rem 4rem;
+  border: 1px solid var(--yellow-transparent-05);
+  background: var(--yellow-transparent-01);
+  &__item {
+    font-size: 0.9rem;
+  }
+}

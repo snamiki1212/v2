@@ -1,0 +1,65 @@
+@import "https://fonts.googleapis.com/css?family=Open+Sans";
+@import "mixin";
+
+:root {
+  /* base */
+  --black: black;
+  --dark-transparent: #010101e7;
+  --white: #ccd6f6;
+  --gray-100: #8892b0;
+
+  /* vivid */
+  --cyan: cyan;
+  --cyan-transparent-05: rgb(0, 255, 255, 0.5);
+  --cyan-transparent-01: rgb(0, 255, 255, 0.1);
+  --magenta: magenta;
+  --magenta-transparent-05: rgb(255, 0, 255, 0.5);
+  --magenta-transparent-01: rgb(255, 0, 255, 0.1);
+  --yellow: yellow;
+  --yellow-transparent-05: rgb(255, 255, 0, 0.5);
+  --yellow-transparent-08: rgb(255, 255, 0, 0.8);
+  --yellow-transparent-01: rgb(255, 255, 0, 0.1);
+}
+
+html {
+  background: var(--dark-transparent);
+  color: var(--white);
+  font-size: clamp(12px, calc(0.7rem + 0.4vw), 20px);
+  letter-spacing: 0.05rem;
+  font-family: "Open Sans";
+  @include background-anime();
+}
+
+a {
+  color: var(--magenta);
+  transition: 0.3s;
+  border: 1px solid transparent;
+  &:hover {
+    transition: 0.3s;
+    opacity: 0.5;
+    animation: vibe 1s linear infinite;
+  }
+  &:after {
+    content: "";
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+  }
+}
+
+@keyframes vibe {
+  0% {
+    color: var(--magenta);
+  }
+  33% {
+    color: var(--cyan);
+  }
+  66% {
+    color: var(--yellow);
+  }
+  100% {
+    color: var(--magenta);
+  }
+}

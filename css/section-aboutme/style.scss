@@ -1,0 +1,44 @@
+.section-aboutme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+
+  max-width: 40rem;
+  border: 1px solid var(--yellow-transparent-08);
+
+  &__title {
+    //
+  }
+
+  &__avator {
+    //
+  }
+
+  &__description {
+    font-size: 1.1rem;
+    & > p {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__tags {
+    width: 100%;
+  }
+
+  &__aboutme {
+    //
+  }
+}
+
+$size: 7rem;
+.avator {
+  width: $size;
+  height: $size;
+}
+
+.description {
+  &__paragraph {
+  }
+}

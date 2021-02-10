@@ -1,0 +1,26 @@
+@import "../animation/style";
+
+.section-sns {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: fixed;
+  bottom: 10%;
+  left: 1.5rem;
+  z-index: 999; // NOTE: TOP position
+  & > a {
+    font-size: 1.5rem;
+  }
+
+  & > a:nth-child(1) {
+    color: var(--cyan);
+  }
+  & > a:nth-child(2) {
+    color: var(--magenta);
+  }
+  & > a:nth-child(3) {
+    color: var(--yellow);
+  }
+
+  animation: fadeInDown 1s;
+}
