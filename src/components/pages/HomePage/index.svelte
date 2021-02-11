@@ -1,7 +1,9 @@
 <script lang="typescript">
+  import SectionSNS from "../../sections/section-sns/index.svelte";
   import SectionHero from "../../sections/section-hero/index.svelte";
   import SectionAboutMe from "../../sections/section-aboutme/index.svelte";
   import SectionExperiences from "../../sections/section-experiences/index.svelte";
+  import SectionFooter from "../../sections/section-footer/index.svelte";
 </script>
 
 <div>
@@ -9,13 +11,7 @@
     <!--  -------------------------------------------------------- -->
     <!--  Nav                                                      -->
     <!--  -------------------------------------------------------- -->
-    <div class="section-sns">
-      <a href="https://twitter.com/snamiki1212"><i class="fab fa-twitter" /></a>
-      <a href="https://github.com/snamiki1212"><i class="fab fa-github" /></a>
-      <a href="https://www.linkedin.com/in/snamiki1212/"
-        ><i class="fab fa-linkedin" /></a
-      >
-    </div>
+    <SectionSNS />
 
     <div class="main">
       <!--  -------------------------------------------------------- -->
@@ -179,19 +175,6 @@
     <!--  -------------------------------------------------------- -->
     <!--  Footer                                                   -->
     <!--  -------------------------------------------------------- -->
-    <div class="footer">
-      <div class="footer__message">Opportunity only knocks once.</div>
-      <div class="footer-bottom">
-        <div class="footer-bottom__source">
-          This site is managed in here <a
-            href="https://github.com/snamiki1212/v2">GitHub</a
-          >.
-        </div>
-        <hr class="footer-bottom__horizon" />
-        <div class="footer-bottom__copyright">
-          <div>© 2021 NamikiShun a.k.a Nash</div>
-        </div>
-      </div>
-    </div>
+    <SectionFooter />
   </body>
 </div>
