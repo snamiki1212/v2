@@ -5,8 +5,16 @@ import livereload from "rollup-plugin-livereload";
 import { terser } from "rollup-plugin-terser";
 import css from "rollup-plugin-css-only";
 import { typescript, scss } from "svelte-preprocess";
+import alias from '@rollup/plugin-alias';
 
 const production = !process.env.ROLLUP_WATCH;
+
+const aliases = alias({
+  resolve: ['.svelte', '.js', 'ts'], //optional, by default this will just look for .js files or folders
+  entries: [
+    { find: 'components', replacement: 'src/components' },
+  ]
+});
 
 function serve() {
   let server;
@@ -42,6 +50,7 @@ export default {
     file: "public/build/bundle.js",
   },
   plugins: [
+    aliases,
     svelte({
       preprocess: [typescript({ tsconfigFile: "./tsconfig.json" }), scss()],
       compilerOptions: {

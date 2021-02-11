@@ -1,6 +1,6 @@
 <script lang="ts">
-  import Subtitle from "../../parts/Subtitle/index.svelte";
-  import Icon from "../../parts/Icon/index.svelte";
+  import Subtitle from "components/parts/Subtitle/index.svelte";
+  import Icon from "components/parts/Icon/index.svelte";
 </script>
 
 <div class="section-projects">

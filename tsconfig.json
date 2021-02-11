@@ -11,7 +11,8 @@
     // 型定義ファイルの置き場所を明示
     "baseUrl": ".",
     "paths": {
-      "*": ["@types/*"]
+      "*": ["@types/*"],
+      "components/*": ["./src/components/*"]
     }
   }
 }
