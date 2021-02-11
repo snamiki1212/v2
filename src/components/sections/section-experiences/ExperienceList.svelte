@@ -1,5 +1,7 @@
 <script lang="ts">
   import Experience from "./Experience.svelte";
+
+  // TODO: move to constant file
   const experienceList = [
     {
       position: "Fullstack Developer",
