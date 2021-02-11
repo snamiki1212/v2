@@ -8,8 +8,6 @@
 </div>
 
 <style lang="scss">
-  @import "https://fonts.googleapis.com/css?family=Monoton|New+Rocker";
-
   .subtitle {
     width: 100%;
     color: var(--cyan-transparent-05);

@@ -176,7 +176,6 @@
     object-fit: cover;
   }
 
-  @import "https://fonts.googleapis.com/css?family=Limelight";
   .project-header {
     display: flex;
     justify-content: space-between;

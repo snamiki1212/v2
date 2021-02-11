@@ -14,7 +14,6 @@
 </div>
 
 <style lang="scss">
-  @import "https://fonts.googleapis.com/css?family=Reenie+Beanie";
   .footer {
     min-height: 50vh;
     background: var(--black);

@@ -1,4 +1,3 @@
-@import "https://fonts.googleapis.com/css?family=Open+Sans";
 :root {
   /* base */
   --black: black;
@@ -17,6 +16,31 @@
   --yellow-transparent-05: rgb(255, 255, 0, 0.5);
   --yellow-transparent-08: rgb(255, 255, 0, 0.8);
   --yellow-transparent-01: rgb(255, 255, 0, 0.1);
+}
+
+@font-face {
+  font-family: "Reenie Beanie";
+  src: url("assets/fonts/ReenieBeanie-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("assets/fonts/OpenSans-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Limelight";
+  src: url("assets/fonts/Limelight-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Monoton";
+  src: url("assets/fonts/Monoton-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "NewRocker";
+  src: url("assets/fonts/NewRocker-Regular.ttf") format("ttf");
 }
 
 html {
