@@ -6,6 +6,8 @@
   export let tags: string[];
   export let metaList: Array<{ url: string; type: "github" | "externalLink" }>;
   export let imgSrc: string;
+  const externalUr =
+    metaList.find((meta) => meta.type === "externalLink")?.url ?? "#";
 </script>
 
 <div class="container">
@@ -20,7 +22,9 @@
     </div>
   </div>
   <div class="image-container">
-    <img class="image" src={imgSrc} alt="img of project1" />
+    <a href={externalUr}>
+      <img class="image" src={imgSrc} alt="img of project1" />
+    </a>
   </div>
   <div class="description-container">
     {#each descriptions as description}
