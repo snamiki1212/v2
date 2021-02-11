@@ -5,17 +5,17 @@
   const mail = "snamiki1212@gmail.com";
 </script>
 
-<div class="section-contact">
-  <div class="section-contact__title">
+<div class="container">
+  <div>
     <Subtitle num={4}>Contact me</Subtitle>
   </div>
-  <div class="section-contact__body">
+  <div class="container__body">
     <a href={`mailto:${mail}`}> 👉Contact me </a>
   </div>
 </div>
 
 <style lang="scss">
-  .section-contact {
+  .container {
     height: 50vh;
     display: flex;
     flex-direction: column;

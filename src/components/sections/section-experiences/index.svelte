@@ -7,15 +7,18 @@
 </script>
 
 <div class="container">
-  <div class="title">
+  <div>
     <Subtitle num={2}>Experiences</Subtitle>
   </div>
+
   <div class="content">
     <ExperienceList />
   </div>
 
   <div class="bottom">
-    Jump to <a href={linkedinUrl}>linkedin</a> if you want to know more!
+    <span>
+      Jump to <a href={linkedinUrl}>linkedin</a> if you want to know more!
+    </span>
   </div>
 </div>
 
@@ -26,9 +29,6 @@
     justify-content: center;
   }
 
-  .title {
-    //
-  }
   .content {
     padding: 2rem;
     border: 1px solid var(--cyan-transparent-05);
