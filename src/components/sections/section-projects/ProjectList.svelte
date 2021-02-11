@@ -1,12 +1,18 @@
 <script lang="ts">
   import Icon from "components/parts/Icon/index.svelte";
+  const descriptionList = [
+    "[UNDER CONSTRUCTION]",
+    "A Web app calendar to help a person who wants to plan to go abroad because of studying or working.",
+    "Generate some going abroad plan and you are able to customize by yourself.",
+    "Calculate the period about some visas which are study visa, working holiday visa or work visa and so on.",
+  ];
 </script>
 
 <div class="project">
   <div class="project-description">
     <div class="project-description__title">
       <div class="project-header">
-        <span class="project-header__text"> Plangoab </span>
+        <span class="project-header__text">Plangoab</span>
         <div class="project-header__icons">
           <a href="https://github.com/snamiki1212/plangoab">
             <Icon type="github" />
@@ -25,24 +31,14 @@
       />
     </div>
     <div class="project-description__text">
-      <p>[UNDER CONSTRUCTION]</p>
-      <p>
-        A Web app calendar to help a person who wants to plan to go abroad
-        because of studying or working.
-      </p>
-      <p>
-        Generate some going abroad plan and you are able to customize by
-        yourself.
-      </p>
-      <p>
-        Calculate the period about some visas which are study visa, working
-        holiday visa or work visa and so on.
-      </p>
+      {#each descriptionList as description}
+        {description}
+      {/each}
     </div>
     <div class="project-description__tags">
-      <span>React</span>
-      <span>Redux</span>
-      <span>ReduxToolkit</span>
+      {#each ["React", "Redux", "ReduxToolkit"] as tag}
+        <span>{tag}</span>
+      {/each}
     </div>
   </div>
 </div>
