@@ -1,3 +1,5 @@
+<script lang="ts"></script>
+
 <div class="section-sns">
   <a href="https://twitter.com/snamiki1212"><i class="fab fa-twitter" /></a>
   <a href="https://github.com/snamiki1212"><i class="fab fa-github" /></a>

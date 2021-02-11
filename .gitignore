@@ -2,7 +2,6 @@
 /node_modules
 
 # css
-*.css*
 !reset.css
 
 .DS_Store
