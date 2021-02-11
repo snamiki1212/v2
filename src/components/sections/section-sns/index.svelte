@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Icon from "../../parts/Icon/index.svelte";
+  import Icon from "components/parts/Icon/index.svelte";
 </script>
 
 <div class="section-sns">

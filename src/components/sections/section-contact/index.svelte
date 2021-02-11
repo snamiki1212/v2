@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Subtitle from "../../parts/Subtitle/index.svelte";
+  import Subtitle from "components/parts/Subtitle/index.svelte";
 </script>
 
 <div class="section-contact">

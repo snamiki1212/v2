@@ -1,12 +1,12 @@
 <script lang="typescript">
-  import SectionSNS from "../../sections/section-sns/index.svelte";
-  import SectionHero from "../../sections/section-hero/index.svelte";
-  import SectionAboutMe from "../../sections/section-aboutme/index.svelte";
-  import SectionExperiences from "../../sections/section-experiences/index.svelte";
-  import SectionProjects from "../../sections/section-projects/index.svelte";
-  import SectionContact from "../../sections/section-contact/index.svelte";
-  import SectionFooter from "../../sections/section-footer/index.svelte";
-  import Layout from "../../parts/Layout/index.svelte";
+  import SectionSNS from "components/sections/section-sns/index.svelte";
+  import SectionHero from "components/sections/section-hero/index.svelte";
+  import SectionAboutMe from "components/sections/section-aboutme/index.svelte";
+  import SectionExperiences from "components/sections/section-experiences/index.svelte";
+  import SectionProjects from "components/sections/section-projects/index.svelte";
+  import SectionContact from "components/sections/section-contact/index.svelte";
+  import SectionFooter from "components/sections/section-footer/index.svelte";
+  import Layout from "components/parts/Layout/index.svelte";
 </script>
 
 <div>
