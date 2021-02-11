@@ -1,9 +1,10 @@
+<script lang="ts">
+  import Subtitle from "../../shared/Subtitle/index.svelte";
+</script>
+
 <div class="section-aboutme">
   <div class="section-aboutme__title">
-    <div class="subtitle">
-      <span class="subtitle__num">01.</span>
-      <span class="subtitle__text">About me</span>
-    </div>
+    <Subtitle numStr="01" text="About me" />
   </div>
   <div class="section-aboutme__avator">
     <img src="assets/avator.jpg" alt="avator img as me" class="avator" />
