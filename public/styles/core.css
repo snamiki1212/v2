@@ -79,7 +79,7 @@ a {
 a:hover {
   transition: 0.3s;
   opacity: 0.5;
-  animation: vibe 1s linear infinite;
+  animation: multi-color 1s linear infinite;
 }
 a:after {
   content: "";
@@ -90,7 +90,7 @@ a:after {
   height: 1px;
 }
 
-@keyframes vibe {
+@keyframes multi-color {
   0% {
     color: var(--magenta);
   }

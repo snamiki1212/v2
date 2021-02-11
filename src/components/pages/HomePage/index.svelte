@@ -18,7 +18,7 @@
       <SectionExperiences />
       <SectionProjects />
       <SectionContact />
-      <SectionFooter />
     </Layout>
+    <SectionFooter />
   </body>
 </div>
