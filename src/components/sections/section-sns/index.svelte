@@ -1,11 +1,17 @@
-<script lang="ts"></script>
+<script lang="ts">
+  import Icon from "../../parts/Icon/index.svelte";
+</script>
 
 <div class="section-sns">
-  <a href="https://twitter.com/snamiki1212"><i class="fab fa-twitter" /></a>
-  <a href="https://github.com/snamiki1212"><i class="fab fa-github" /></a>
-  <a href="https://www.linkedin.com/in/snamiki1212/"
-    ><i class="fab fa-linkedin" /></a
-  >
+  <a href="https://twitter.com/snamiki1212">
+    <Icon type="twitter" />
+  </a>
+  <a href="https://github.com/snamiki1212">
+    <Icon type="github" />
+  </a>
+  <a href="https://www.linkedin.com/in/snamiki1212/">
+    <Icon type="linkedin" />
+  </a>
 </div>
 
 <style lang="scss">
