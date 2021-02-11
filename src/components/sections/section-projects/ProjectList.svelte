@@ -1,5 +1,4 @@
 <script lang="ts">
-  import Icon from "components/parts/Icon/index.svelte";
   import Project from "./Project.svelte";
 
   const projectList = [
@@ -21,6 +20,32 @@
       ],
       imgSrc: "assets/images/project_plangoab.png",
     },
+    {
+      name: "Lunash",
+      descriptionList: ["A web blog developed and designed from scratch."],
+      tags: ["React", "Gatsby.js"],
+      metaList: [
+        { type: "github", url: "https://github.com/snamiki1212/myblog" },
+        {
+          type: "externalLink",
+          url: "https://snamiki1212.com",
+        },
+      ],
+      imgSrc: "assets/images/project_lunash.png",
+    },
+    {
+      name: "Portfolio v2",
+      descriptionList: ["A web blog developed and designed from scratch."],
+      tags: ["Svelte", "TypeScript", "SCSS"],
+      metaList: [
+        { type: "github", url: "https://github.com/snamiki1212/v2" },
+        {
+          type: "externalLink",
+          url: "https://snamiki1212.github.io/v2",
+        },
+      ],
+      imgSrc: "assets/images/project_portfolio-v2.png",
+    },
   ];
 </script>
 
@@ -35,74 +60,6 @@
     />
   </div>
 {/each}
-
-<!--  -->
-<div class="project">
-  <div class="project-description">
-    <div class="project-description__title">
-      <div class="project-header">
-        <span class="project-header__text"> Lunash </span>
-        <div class="project-header__icons">
-          <a href="https://github.com/snamiki1212/myblog">
-            <Icon type="github" />
-          </a>
-          <a href="https://snamiki1212.com">
-            <Icon type="externalLink" />
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="project-description__img">
-      <img
-        class="project-img"
-        src="assets/images/project_lunash.png"
-        alt="img of project1"
-      />
-    </div>
-    <div class="project-description__text">
-      <p>A web blog developed and designed from scratch.</p>
-    </div>
-    <div class="project-description__tags">
-      <span>React</span>
-      <span>Gatsby.js</span>
-    </div>
-  </div>
-</div>
-<!--  -->
-
-<!--  -->
-<div class="project">
-  <div class="project-description">
-    <div class="project-description__title">
-      <div class="project-header">
-        <span class="project-header__text"> Portfolio v2 </span>
-        <div class="project-header__icons">
-          <a href="https://github.com/snamiki1212/v2">
-            <Icon type="github" />
-          </a>
-          <a href="https://snamiki1212.github.io/v2">
-            <Icon type="externalLink" />
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="project-description__img">
-      <img
-        class="project-img"
-        src="assets/images/project_portfolio-v2.png"
-        alt="img of project1"
-      />
-    </div>
-    <div class="project-description__text">
-      <p>A web blog developed and designed from scratch.</p>
-    </div>
-    <div class="project-description__tags">
-      <span>Svelte</span>
-      <span>TypeScript</span>
-      <span>SCSS</span>
-    </div>
-  </div>
-</div>
 
 <!--  -->
 <style lang="scss">
