@@ -10,47 +10,51 @@
 
   // animations
   import IntersectionObserver from "components/parts/IntersectionObserver/index.svelte";
-  import { fade } from "svelte/transition";
   const top = -200;
 </script>
 
-<div>
-  <body>
-    <SectionSNS />
-    <Layout>
-      <SectionHero />
-      <IntersectionObserver let:intersecting {top} once={true}>
-        {#if intersecting}
-          <div transition:fade>
-            <SectionAboutMe />
-          </div>
-        {/if}
-      </IntersectionObserver>
+<body>
+  <SectionSNS />
+  <Layout>
+    <SectionHero />
 
-      <IntersectionObserver let:intersecting {top} once={true}>
-        {#if intersecting}
-          <div transition:fade>
-            <SectionExperiences />
-          </div>
-        {/if}
-      </IntersectionObserver>
+    <IntersectionObserver let:intersecting {top} once={true}>
+      <div class:fade-out={!intersecting}>
+        <SectionAboutMe />
+      </div>
+    </IntersectionObserver>
 
-      <IntersectionObserver let:intersecting {top} once={true}>
-        {#if intersecting}
-          <div transition:fade>
-            <SectionProjects />
-          </div>
-        {/if}
-      </IntersectionObserver>
+    <IntersectionObserver let:intersecting {top} once={true}>
+      <div class:fade-out={!intersecting}>
+        <SectionExperiences />
+      </div>
+    </IntersectionObserver>
 
-      <IntersectionObserver let:intersecting {top} once={true}>
-        {#if intersecting}
-          <div transition:fade>
-            <SectionContact />
-          </div>
-        {/if}
-      </IntersectionObserver>
-    </Layout>
-    <SectionFooter />
-  </body>
-</div>
+    <IntersectionObserver let:intersecting {top} once={true}>
+      <div class:fade-out={!intersecting}>
+        <SectionProjects />
+      </div>
+    </IntersectionObserver>
+
+    <IntersectionObserver let:intersecting {top} once={true}>
+      <div class:fade-out={!intersecting}>
+        <SectionContact />
+      </div>
+    </IntersectionObserver>
+  </Layout>
+  <SectionFooter />
+</body>
+
+<style lang="scss">
+  // NOTE:
+  // svelte's transition is fired by creating/removing DOM
+  // but it has performance problem and design gattling.
+  // this is why I use vanillla css animation.
+  // >> REF:https://stackoverflow.com/a/59093272/8842333
+  div {
+    transition: 0.5s;
+  }
+  .fade-out {
+    opacity: 0;
+  }
+</style>
