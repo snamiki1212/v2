@@ -20,27 +20,28 @@
 
 @font-face {
   font-family: "Reenie Beanie";
-  src: url("assets/fonts/ReenieBeanie-Regular.ttf") format("ttf");
+  src: url("/assets/fonts/ReenieBeanie-Regular.ttf") format("truetype");
+  color: red;
 }
 
 @font-face {
   font-family: "Open Sans";
-  src: url("assets/fonts/OpenSans-Regular.ttf") format("ttf");
+  src: url("/assets/fonts/OpenSans-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Limelight";
-  src: url("assets/fonts/Limelight-Regular.ttf") format("ttf");
+  src: url("/assets/fonts/Limelight-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Monoton";
-  src: url("assets/fonts/Monoton-Regular.ttf") format("ttf");
+  src: url("/assets/fonts/Monoton-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "NewRocker";
-  src: url("assets/fonts/NewRocker-Regular.ttf") format("ttf");
+  src: url("/assets/fonts/NewRocker-Regular.ttf") format("truetype");
 }
 
 html {

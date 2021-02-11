@@ -9,8 +9,6 @@
 </div>
 
 <style lang="scss">
-  @import "https://fonts.googleapis.com/css?family=Reenie+Beanie";
-
   .section-hero {
     height: 100vh;
     display: flex;
