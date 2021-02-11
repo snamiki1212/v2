@@ -50,7 +50,7 @@
 </script>
 
 {#each projectList as project}
-  <div class="project">
+  <div class="wrapper">
     <Project
       name={project.name}
       descriptions={project.descriptionList}
@@ -63,7 +63,7 @@
 
 <!--  -->
 <style lang="scss">
-  .project {
+  .wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
