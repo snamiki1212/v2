@@ -33,7 +33,7 @@ Here is a repository that managed all portfolio sites I've created.
 
 ## Licence
 
-[MIT](https://github.com/snamiki1212/v2/blob/master/LICENCE)
+[MIT](https://github.com/snamiki1212/v2/blob/master/LICENSE)
 
 ## Author
 
