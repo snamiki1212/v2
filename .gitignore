@@ -6,3 +6,5 @@
 !reset.css
 
 .DS_Store
+
+/public/build/

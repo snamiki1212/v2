@@ -35,7 +35,7 @@ jobs:
         uses: actions/cache@v1
         id: svelte-public-folder
         with:
-          path: ./
+          path: public/
           key: ${{ runner.os }}-public-svelte
           restore-keys: |
             ${{ runner.os }}-public-svelte
@@ -50,9 +50,6 @@ jobs:
 
       - name: Build
         run: yarn run build
-
-      - name: Cd to publish folder
-        run: mkdir public && mv index.html assets css scripts public
 
       - name: Deploy to github-hosting
         uses: peaceiris/actions-gh-pages@v3
