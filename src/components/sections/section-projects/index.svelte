@@ -142,12 +142,14 @@
   .project {
     display: flex;
     justify-content: center;
+    align-items: center;
     border: 1px solid var(--magenta-transparent-05);
   }
 
   .project-description {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
     gap: 0.5rem;
     padding: 1rem;
@@ -172,7 +174,7 @@
   }
 
   .project-img {
-    width: 100%;
+    max-width: 20rem;
     object-fit: cover;
   }
 
