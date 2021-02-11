@@ -1,9 +1,10 @@
+<script lang="ts">
+  import Subtitle from "../../parts/Subtitle/index.svelte";
+</script>
+
 <div class="section-contact">
   <div class="section-contact__title">
-    <div class="subtitle">
-      <span class="subtitle__num">04. </span>
-      <span class="subtitle__text">Contact me</span>
-    </div>
+    <Subtitle num={4}>Contact me</Subtitle>
   </div>
   <div class="section-contact__body">
     <a href="mailto:snamiki1212@gmail.com"> 👉Contact me </a>

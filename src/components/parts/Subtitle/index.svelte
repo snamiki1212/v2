@@ -1,11 +1,10 @@
 <script lang="typescript">
-  export let numStr: string = "01";
-  export let text: string = "__REPLACE_ME__TITLE__";
+  export let num: number = 1;
 </script>
 
 <div class="subtitle">
-  <span class="subtitle__num">{numStr}.</span>
-  <span class="subtitle__text">{text}</span>
+  <span class="subtitle__num">0{num}.</span>
+  <span class="subtitle__text"><slot /></span>
 </div>
 
 <style lang="scss">

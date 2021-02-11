@@ -4,7 +4,7 @@
 
 <div class="section-aboutme">
   <div class="section-aboutme__title">
-    <Subtitle numStr="01" text="About me" />
+    <Subtitle num={1}>About me</Subtitle>
   </div>
   <div class="section-aboutme__avator">
     <img src="assets/avator.jpg" alt="avator img as me" class="avator" />

@@ -1,9 +1,10 @@
+<script lang="ts">
+  import Subtitle from "../../parts/Subtitle/index.svelte";
+</script>
+
 <div class="section-projects">
   <div class="section-projects__title">
-    <div class="subtitle">
-      <span class="subtitle__num">03. </span>
-      <span class="subtitle__text">Projects</span>
-    </div>
+    <Subtitle num={3}>Projects</Subtitle>
   </div>
   <div class="section-projects__projectList">
     <div class="project">
