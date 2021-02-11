@@ -114,8 +114,8 @@
           <p>A web blog developed and designed from scratch.</p>
         </div>
         <div class="project-description__tags">
-          <span>[TODO]Svelte</span>
-          <span>[TODO]TypeScript</span>
+          <span>Svelte</span>
+          <span>TypeScript</span>
           <span>SCSS</span>
         </div>
       </div>
