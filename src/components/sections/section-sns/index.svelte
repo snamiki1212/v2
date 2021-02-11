@@ -9,6 +9,8 @@
 </div>
 
 <style lang="scss">
+  @import url("https://pro.fontawesome.com/releases/v5.10.0/css/fontawesome.css");
+
   @keyframes easeanime {
     0% {
       transform: translateX(9999px);

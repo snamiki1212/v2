@@ -25,7 +25,7 @@
         <div class="project-description__img">
           <img
             class="project-img"
-            src="assets/project_plangoab.png"
+            src="assets/images/project_plangoab.png"
             alt="img of project1"
           />
         </div>
@@ -71,7 +71,7 @@
         <div class="project-description__img">
           <img
             class="project-img"
-            src="assets/project_lunash.png"
+            src="assets/images/project_lunash.png"
             alt="img of project1"
           />
         </div>
@@ -105,7 +105,7 @@
         <div class="project-description__img">
           <img
             class="project-img"
-            src="assets/project_portfolio-v2.png"
+            src="assets/images/project_portfolio-v2.png"
             alt="img of project1"
           />
         </div>
