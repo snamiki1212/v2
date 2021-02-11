@@ -1,5 +1,8 @@
 <script lang="ts">
   import Subtitle from "components/parts/Subtitle/index.svelte";
+
+  // TODO: move to constants
+  const mail = "snamiki1212@gmail.com";
 </script>
 
 <div class="section-contact">
@@ -7,7 +10,7 @@
     <Subtitle num={4}>Contact me</Subtitle>
   </div>
   <div class="section-contact__body">
-    <a href="mailto:snamiki1212@gmail.com"> 👉Contact me </a>
+    <a href={`mailto:${mail}`}> 👉Contact me </a>
   </div>
 </div>
 

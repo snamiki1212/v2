@@ -1,38 +1,27 @@
 <script lang="ts">
   import Subtitle from "components/parts/Subtitle/index.svelte";
   import TagList from "./TagList.svelte";
-
-  const avatorSrc = "assets/images/avator.jpg";
+  import Avator from "./Avator.svelte";
+  import Description from "./Description.svelte";
 </script>
 
-<div class="section-aboutme">
-  <div class="section-aboutme__title">
+<div class="container">
+  <div>
     <Subtitle num={1}>About me</Subtitle>
   </div>
-  <div class="section-aboutme__avator">
-    <img src={avatorSrc} alt="avator img as me" class="avator" />
+  <div>
+    <Avator />
   </div>
-  <div class="section-aboutme__description">
-    <p>Hello, I'm Nash, a software developer based in Vancouver.</p>
-    <p>
-      I love creating degital things like websites, applications, tools, design
-      and etc.
-    </p>
-    <p>
-      After graduating from <a
-        href="https://www.meiji.ac.jp/cip/english/index.html"
-        >Meiji University</a
-      > in Japan, I joined some developer teams as a worker or freelancer.
-    </p>
-    <p>Here are the tech stacks I've been working recently.</p>
+  <div>
+    <Description />
   </div>
-  <div class="section-aboutme__tags">
+  <div>
     <TagList />
   </div>
 </div>
 
 <style lang="scss">
-  .section-aboutme {
+  .container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -54,34 +43,5 @@
       border: 2px solid var(--yellow-transparent-08);
       z-index: -1;
     }
-
-    &__title {
-      //
-    }
-
-    &__avator {
-      //
-    }
-
-    &__description {
-      font-size: 1.1rem;
-      & > p {
-        margin-bottom: 1rem;
-      }
-    }
-
-    &__tags {
-      width: 100%;
-    }
-
-    &__aboutme {
-      //
-    }
-  }
-
-  $size: 15rem;
-  .avator {
-    width: $size;
-    height: $size;
   }
 </style>

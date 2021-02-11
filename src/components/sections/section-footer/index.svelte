@@ -1,14 +1,17 @@
+<script lang="ts">
+  const githubUrlOfThisSite = "https://github.com/snamiki1212/v2";
+  const copyright = "© 2021 NamikiShun a.k.a Nash";
+</script>
+
 <div class="container">
   <div class="catchcopy">Opportunity only knocks once.</div>
   <div class="bottom-container">
     <div class="source">
-      This site is managed in here <a href="https://github.com/snamiki1212/v2"
-        >GitHub</a
-      >.
+      This site is managed in here <a href={githubUrlOfThisSite}>GitHub</a>.
     </div>
     <hr class="horizon" />
     <div class="copyright">
-      <div>© 2021 NamikiShun a.k.a Nash</div>
+      <div>{copyright}</div>
     </div>
   </div>
 </div>
