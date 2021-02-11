@@ -1,5 +1,6 @@
 <script lang="ts">
   const avatorSrc = "assets/images/avator.jpg";
+  // TODO: alt must be uniq
 </script>
 
 <img src={avatorSrc} alt="avator img as me" class="avator" />

@@ -1,19 +1,15 @@
 <script lang="ts">
 </script>
 
-<div class="main">
+<div class="container">
   <slot />
 </div>
 
 <style lang="scss">
-  .main {
+  .container {
     display: grid;
     justify-items: center;
     gap: 10rem;
     padding: 1rem;
-
-    & > div {
-      max-width: 30rem;
-    }
   }
 </style>
