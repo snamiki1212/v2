@@ -7,11 +7,7 @@
     <Subtitle num={1}>About me</Subtitle>
   </div>
   <div class="section-aboutme__avator">
-    <img
-      src="/assets/images/avator.jpg"
-      alt="avator img as me"
-      class="avator"
-    />
+    <img src="assets/images/avator.jpg" alt="avator img as me" class="avator" />
   </div>
   <div class="section-aboutme__description">
     <p>Hello, I'm Nash, a software developer based in Vancouver.</p>
