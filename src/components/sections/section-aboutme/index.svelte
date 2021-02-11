@@ -1,5 +1,8 @@
 <script lang="ts">
   import Subtitle from "components/parts/Subtitle/index.svelte";
+  import TagList from "./TagList.svelte";
+
+  const avatorSrc = "assets/images/avator.jpg";
 </script>
 
 <div class="section-aboutme">
@@ -7,7 +10,7 @@
     <Subtitle num={1}>About me</Subtitle>
   </div>
   <div class="section-aboutme__avator">
-    <img src="assets/images/avator.jpg" alt="avator img as me" class="avator" />
+    <img src={avatorSrc} alt="avator img as me" class="avator" />
   </div>
   <div class="section-aboutme__description">
     <p>Hello, I'm Nash, a software developer based in Vancouver.</p>
@@ -24,14 +27,7 @@
     <p>Here are the tech stacks I've been working recently.</p>
   </div>
   <div class="section-aboutme__tags">
-    <ul class="aboutme-tags">
-      <li class="aboutme-tags__item">TypeScript</li>
-      <li class="aboutme-tags__item">React / React Native / Next.js</li>
-      <li class="aboutme-tags__item">Node.js / Express</li>
-      <li class="aboutme-tags__item">PHP / Laravel</li>
-      <li class="aboutme-tags__item">Ruby on Rails</li>
-      <li class="aboutme-tags__item">Elixir / Phoenix</li>
-    </ul>
+    <TagList />
   </div>
 </div>
 
@@ -87,19 +83,5 @@
   .avator {
     width: $size;
     height: $size;
-  }
-
-  .description {
-    &__paragraph {
-    }
-  }
-
-  .aboutme-tags {
-    padding: 2rem 4rem;
-    border: 1px solid var(--yellow-transparent-05);
-    background: var(--yellow-transparent-01);
-    &__item {
-      font-size: 0.9rem;
-    }
   }
 </style>

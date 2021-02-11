@@ -61,7 +61,6 @@
   </div>
 {/each}
 
-<!--  -->
 <style lang="scss">
   .wrapper {
     display: flex;
