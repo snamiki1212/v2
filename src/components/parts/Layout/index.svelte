@@ -9,6 +9,7 @@
   .container {
     display: grid;
     justify-items: center;
+    align-items: center;
     gap: 10rem;
     padding: 1rem;
   }

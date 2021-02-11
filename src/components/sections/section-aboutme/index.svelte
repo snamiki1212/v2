@@ -30,7 +30,6 @@
     gap: 1rem;
     padding: 2rem;
 
-    max-width: 40rem;
     border: 1px solid var(--yellow-transparent-08);
 
     position: relative;

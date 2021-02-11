@@ -18,12 +18,10 @@
     flex-direction: column;
     align-items: center;
   }
-  .title {
-    //
-  }
   .projectList {
     display: grid;
     justify-items: center;
     gap: 2rem;
+    width: 100%;
   }
 </style>

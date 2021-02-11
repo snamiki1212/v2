@@ -54,9 +54,3 @@
     <SectionFooter />
   </body>
 </div>
-
-<style lang="scss">
-  .hidden {
-    visibility: hidden;
-  }
-</style>
