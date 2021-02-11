@@ -18,7 +18,6 @@
 
 <style lang="scss">
   .container {
-    margin-top: 30vh;
     min-height: 50vh;
     background: var(--black);
     display: flex;

@@ -4,7 +4,7 @@
 </script>
 
 <div class="container">
-  <div class="title">
+  <div>
     <Subtitle num={3}>Projects</Subtitle>
   </div>
   <div class="projectList">
@@ -16,8 +16,8 @@
   .container {
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
+
   .projectList {
     display: grid;
     justify-items: center;

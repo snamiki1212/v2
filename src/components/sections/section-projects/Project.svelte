@@ -19,7 +19,7 @@
       {/each}
     </div>
   </div>
-  <div>
+  <div class="image-container">
     <img class="image" src={imgSrc} alt="img of project1" />
   </div>
   <div class="description-container">
@@ -40,8 +40,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    gap: 0.5rem;
+    gap: 0.7rem;
     padding: 1rem;
+  }
+
+  .image-container {
+    width: 100%;
   }
 
   .description-container {
@@ -51,6 +55,7 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    width: 100%;
   }
 
   .tags-container {
@@ -61,7 +66,6 @@
   }
 
   .image {
-    max-width: 20rem;
     object-fit: cover;
   }
 
@@ -81,5 +85,6 @@
   .header-icon {
     font-size: 1.5rem;
     color: var(--magenta);
+    text-decoration: none;
   }
 </style>

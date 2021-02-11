@@ -10,13 +10,13 @@
     <Subtitle num={4}>Contact me</Subtitle>
   </div>
   <div class="container__body">
-    <a href={`mailto:${mail}`}> 👉Contact me </a>
+    <a href={`mailto:${mail}`}> 👉Contact me👈 </a>
   </div>
 </div>
 
 <style lang="scss">
   .container {
-    height: 50vh;
+    height: 30vh;
     display: flex;
     flex-direction: column;
     align-items: center;

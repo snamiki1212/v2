@@ -18,29 +18,37 @@
   <Layout>
     <SectionHero />
 
-    <IntersectionObserver let:intersecting {top} once={true}>
-      <div class:fade-out={!intersecting}>
-        <SectionAboutMe />
-      </div>
-    </IntersectionObserver>
+    <div class="item">
+      <IntersectionObserver let:intersecting {top} once={true}>
+        <div class:fade-out={!intersecting}>
+          <SectionAboutMe />
+        </div>
+      </IntersectionObserver>
+    </div>
 
-    <IntersectionObserver let:intersecting {top} once={true}>
-      <div class:fade-out={!intersecting}>
-        <SectionExperiences />
-      </div>
-    </IntersectionObserver>
+    <div class="item">
+      <IntersectionObserver let:intersecting {top} once={true}>
+        <div class:fade-out={!intersecting}>
+          <SectionExperiences />
+        </div>
+      </IntersectionObserver>
+    </div>
 
-    <IntersectionObserver let:intersecting {top} once={true}>
-      <div class:fade-out={!intersecting}>
-        <SectionProjects />
-      </div>
-    </IntersectionObserver>
+    <div class="item">
+      <IntersectionObserver let:intersecting {top} once={true}>
+        <div class:fade-out={!intersecting}>
+          <SectionProjects />
+        </div>
+      </IntersectionObserver>
+    </div>
 
-    <IntersectionObserver let:intersecting {top} once={true}>
-      <div class:fade-out={!intersecting}>
-        <SectionContact />
-      </div>
-    </IntersectionObserver>
+    <div class="item">
+      <IntersectionObserver let:intersecting {top} once={true}>
+        <div class:fade-out={!intersecting}>
+          <SectionContact />
+        </div>
+      </IntersectionObserver>
+    </div>
   </Layout>
   <SectionFooter />
 </body>
@@ -56,5 +64,9 @@
   }
   .fade-out {
     opacity: 0;
+  }
+
+  .item {
+    max-width: 45rem;
   }
 </style>
