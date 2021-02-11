@@ -3,31 +3,35 @@
   import ExperienceList from "./ExperienceList.svelte";
 </script>
 
-<div class="section-experiences">
-  <div class="section-experiences__title">
+<div class="container">
+  <div class="title">
     <Subtitle num={2}>Experiences</Subtitle>
   </div>
-  <div class="section-experiences__content">
+  <div class="content">
     <ExperienceList />
   </div>
 
-  <div class="section-experiences__bottom">
+  <div class="bottom">
     Jump to <a href="https://www.linkedin.com/in/snamiki1212/">linkedin</a> if you
     want to know more!
   </div>
 </div>
 
 <style lang="scss">
-  .section-experiences {
+  .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    &__content {
-      padding: 2rem;
-      border: 1px solid var(--cyan-transparent-05);
-    }
-    &__bottom {
-      text-align: center;
-    }
+  }
+
+  .title {
+    //
+  }
+  .content {
+    padding: 2rem;
+    border: 1px solid var(--cyan-transparent-05);
+  }
+  .bottom {
+    text-align: center;
   }
 </style>

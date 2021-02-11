@@ -17,23 +17,23 @@
 </div>
 <div>🕓{from} ~ {to}</div>
 <div>👔{type}</div>
-<ul class="experiences-list">
+<ul class="paragraphList">
   {#each paragraphs as paragraph}
-    <li class="experiences-list__item">
+    <li class="paragraphItem">
       {paragraph}
     </li>
   {/each}
 </ul>
 
 <style lang="scss">
-  .experiences-list {
+  .paragraphList {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 0.5rem;
-    &__item {
-      color: var(--yellow-transparent-08);
-      font-size: 0.9rem;
-    }
+  }
+  .paragraphItem {
+    color: var(--yellow-transparent-08);
+    font-size: 0.9rem;
   }
 </style>

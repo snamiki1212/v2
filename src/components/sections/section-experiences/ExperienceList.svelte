@@ -39,9 +39,9 @@
   ];
 </script>
 
-<div class="experience-list">
+<div class="list">
   {#each experienceList as experience}
-    <div class="experience-list__item">
+    <div class="item">
       <Experience
         position={experience.position}
         from={experience.from}
@@ -56,16 +56,15 @@
 </div>
 
 <style lang="scss">
-  .experience-list {
+  .list {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 2rem;
-
-    &__item {
-      padding: 2rem;
-      border: 1px solid var(--cyan-transparent-05);
-      background: var(--cyan-transparent-01);
-    }
+  }
+  .item {
+    padding: 2rem;
+    border: 1px solid var(--cyan-transparent-05);
+    background: var(--cyan-transparent-01);
   }
 </style>
