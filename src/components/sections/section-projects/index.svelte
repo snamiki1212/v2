@@ -1,5 +1,6 @@
 <script lang="ts">
   import Subtitle from "../../parts/Subtitle/index.svelte";
+  import Icon from "../../parts/Icon/index.svelte";
 </script>
 
 <div class="section-projects">
@@ -13,12 +14,12 @@
           <div class="project-header">
             <span class="project-header__text"> Plangoab </span>
             <div class="project-header__icons">
-              <a href="https://github.com/snamiki1212/plangoab"
-                ><i class="fab fa-github" /></a
-              >
-              <a href="https://plangoab.snamiki1212.vercel.app"
-                ><i class="fas fa-external-link-alt" /></a
-              >
+              <a href="https://github.com/snamiki1212/plangoab">
+                <Icon type="github" />
+              </a>
+              <a href="https://plangoab.snamiki1212.vercel.app">
+                <Icon type="externalLink" />
+              </a>
             </div>
           </div>
         </div>
@@ -59,12 +60,12 @@
           <div class="project-header">
             <span class="project-header__text"> Lunash </span>
             <div class="project-header__icons">
-              <a href="https://github.com/snamiki1212/myblog"
-                ><i class="fab fa-github" /></a
-              >
-              <a href="https://snamiki1212.com"
-                ><i class="fas fa-external-link-alt" /></a
-              >
+              <a href="https://github.com/snamiki1212/myblog">
+                <Icon type="github" />
+              </a>
+              <a href="https://snamiki1212.com">
+                <Icon type="externalLink" />
+              </a>
             </div>
           </div>
         </div>
@@ -93,12 +94,12 @@
           <div class="project-header">
             <span class="project-header__text"> Portfolio v2 </span>
             <div class="project-header__icons">
-              <a href="https://github.com/snamiki1212/v2"
-                ><i class="fab fa-github" /></a
-              >
-              <a href="https://snamiki1212.github.io/v2"
-                ><i class="fas fa-external-link-alt" /></a
-              >
+              <a href="https://github.com/snamiki1212/v2">
+                <Icon type="github" />
+              </a>
+              <a href="https://snamiki1212.github.io/v2">
+                <Icon type="externalLink" />
+              </a>
             </div>
           </div>
         </div>

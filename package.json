@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^5.15.2",
+    "@fortawesome/free-solid-svg-icons": "^5.15.2",
     "sirv-cli": "^1.0.0",
     "svelte-fa": "^2.2.0"
   }
