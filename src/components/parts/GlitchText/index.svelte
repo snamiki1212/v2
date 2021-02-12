@@ -43,7 +43,7 @@
   .text-wrapper {
     // Glitch
     transform: skewX(0deg) scaleY(1);
-    animation: clock-bag 4s linear infinite;
+    animation: noisy 4s linear infinite;
 
     // Core
     display: inline-block;
@@ -120,7 +120,7 @@
     }
   }
 
-  @keyframes clock-bag {
+  @keyframes noisy {
     @for $i from 0 through 50 {
       #{$i*(1/50)*10*10%} {
         transform: translate(_random(3) * 1px, _random(3) * 1px);
@@ -143,41 +143,6 @@
     }
     53% {
       transform: scaleX(1) scaleY(1) skewX(0deg);
-    }
-  }
-
-  @keyframes tr-bag {
-    @for $i from 0 through 50 {
-      #{$i*(1/50)*10*10%} {
-        transform: translate(_random(5) * 1px, _random(5) * 1px);
-      }
-    }
-    1% {
-      transform: scaleY(1) skewX(0deg);
-    }
-    1.5% {
-      transform: scaleY(3) skewX(-60deg);
-    }
-    2% {
-      transform: scaleY(1) skewX(0deg);
-    }
-    51% {
-      transform: scaleX(1) scaleY(1) skewX(0deg);
-    }
-    52% {
-      transform: scaleX(1.5) scaleY(0.2) skewX(80deg);
-    }
-    53% {
-      transform: scaleX(1) scaleY(1) skewX(0deg);
-    }
-  }
-
-  @keyframes bg-move {
-    0% {
-      background-position: 0 0;
-    }
-    100% {
-      background-position: 0 -32px;
     }
   }
 </style>
