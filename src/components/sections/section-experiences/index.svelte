@@ -8,7 +8,7 @@
 
 <div class="container">
   <div>
-    <Subtitle num={2}>Experiences</Subtitle>
+    <Subtitle num={2} text="Experiences" />
   </div>
 
   <div class="content">

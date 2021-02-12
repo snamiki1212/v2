@@ -4,6 +4,6 @@
 </script>
 
 <div>
-  <Subtitle num={3}>Projects</Subtitle>
+  <Subtitle num={3} text="Projects" />
   <ProjectList />
 </div>

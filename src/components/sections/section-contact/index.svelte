@@ -7,7 +7,7 @@
 
 <div class="container">
   <div>
-    <Subtitle num={4}>Contact me</Subtitle>
+    <Subtitle num={4} text="Contact me" />
   </div>
   <div class="container__body">
     <a href={`mailto:${mail}`}> 👉Contact me👈 </a>

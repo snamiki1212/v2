@@ -13,7 +13,7 @@
 </div>
 
 <style lang="scss">
-  @import url("https://fonts.googleapis.com/css?family=Reenie+Beanie");
+  // @import url("https://fonts.googleapis.com/css?family=Reenie+Beanie");
   $bg-color: rgba(0, 0, 0, 0.2);
   // $txt-color: #fff;
 
@@ -121,7 +121,7 @@
     // background: $bg-color;
     // color: $txt-color;
     display: inline-block;
-    font-family: "Reenie Beanie";
+    // font-family: "Reenie Beanie";
     &:before {
       position: absolute;
       z-index: 999999;
@@ -149,7 +149,7 @@
     cursor: default;
     transform: skewX(0deg) scaleY(1);
     animation: clock-bag 4s linear infinite;
-    font-family: "Reenie Beanie";
+    // font-family: "Reenie Beanie";
   }
 
   .is-off {
@@ -163,7 +163,7 @@
     }
   }
   .text {
-    font-family: "Reenie Beanie";
+    // font-family: "Reenie Beanie";
     display: inline-block;
     // font-size: 5rem;
     &:before,
@@ -176,7 +176,7 @@
       // background: $bg-color;
       width: 100%;
       clip: rect(0, 100%, 0, 0);
-      font-family: "Reenie Beanie";
+      // font-family: "Reenie Beanie";
     }
     &:before {
       left: -($offset-c2) px;

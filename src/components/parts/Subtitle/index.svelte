@@ -1,10 +1,12 @@
 <script lang="typescript">
+  import GlitchText from "components/parts/GlitchText/index.svelte";
   export let num: number = 1;
+  export let text: string;
 </script>
 
 <div class="subtitle">
   <span class="number">0{num}.</span>
-  <span class="text"><slot /></span>
+  <span class="text"><GlitchText {text} /></span>
 </div>
 
 <style lang="scss">

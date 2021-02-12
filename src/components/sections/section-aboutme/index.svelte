@@ -7,7 +7,7 @@
 
 <div class="container">
   <div>
-    <Subtitle num={1}>About me</Subtitle>
+    <Subtitle num={1} text="About me" />
   </div>
   <div>
     <Avator />
