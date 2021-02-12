@@ -27,9 +27,7 @@
 
 <style lang="scss">
   .paragraphList {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: grid;
     gap: 0.5rem;
   }
   .paragraphItem {

@@ -54,7 +54,7 @@
   }
 
   .section-sns {
-    display: flex;
+    display: grid;
     flex-direction: column;
     justify-content: space-between;
     gap: 2rem;

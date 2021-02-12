@@ -17,9 +17,8 @@
 <style lang="scss">
   .container {
     height: 30vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    justify-items: center;
 
     &__body {
       text-align: center;

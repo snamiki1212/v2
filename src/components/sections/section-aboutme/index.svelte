@@ -22,13 +22,11 @@
 
 <style lang="scss">
   .container {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    justify-items: center;
     gap: 1rem;
     padding: 2rem;
+    margin: 0 auto;
 
     border: 1px solid var(--yellow-transparent-08);
 

@@ -24,9 +24,9 @@
 
 <style lang="scss">
   .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    justify-items: center;
+    gap: 0.2rem;
   }
 
   .content {
@@ -35,5 +35,6 @@
   }
   .bottom {
     text-align: center;
+    width: 100%;
   }
 </style>

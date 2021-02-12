@@ -11,10 +11,8 @@
 <style lang="scss">
   .container {
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    align-content: center;
     font-family: "Reenie Beanie";
     text-align: center;
   }

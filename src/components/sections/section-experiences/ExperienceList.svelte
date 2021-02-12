@@ -59,9 +59,7 @@
 
 <style lang="scss">
   .list {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: grid;
     gap: 2rem;
   }
   .item {
