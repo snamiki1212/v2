@@ -24,7 +24,7 @@
   .container {
     display: grid;
     justify-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
     padding: 2rem;
     margin: 0 auto;
 

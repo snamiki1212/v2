@@ -5,7 +5,7 @@
 </script>
 
 <div class="subtitle">
-  <span class="number">0{num}.</span>
+  <span class="number"><GlitchText text={"0" + num + "."} /></span>
   <span class="text"><GlitchText {text} /></span>
 </div>
 

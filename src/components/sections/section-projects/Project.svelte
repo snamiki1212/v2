@@ -23,7 +23,9 @@
   </div>
   <div>
     <a href={externalUr}>
-      <img class="image" src={imgSrc} alt="img of project1" />
+      <div class="image-container">
+        <img class="image" src={imgSrc} alt="img of project1" />
+      </div>
     </a>
   </div>
   <div class="description-container">
@@ -65,8 +67,16 @@
     padding: 0 0.5rem;
   }
 
+  .image-container {
+    background-color: var(--magenta-transparent-05);
+    transition: 0.3s;
+    &:hover {
+      background-color: transparent;
+    }
+  }
   .image {
     object-fit: cover;
+    mix-blend-mode: screen;
   }
 
   .header-container {

@@ -7,7 +7,7 @@
 </script>
 
 <div class="container">
-  <div>
+  <div class="subtitle">
     <Subtitle num={2} text="Experiences" />
   </div>
 
@@ -28,7 +28,9 @@
     justify-items: center;
     gap: 0.2rem;
   }
-
+  .subtitle {
+    margin-left: auto;
+  }
   .content {
     padding: 2rem;
     border: 1px solid var(--cyan-transparent-05);
