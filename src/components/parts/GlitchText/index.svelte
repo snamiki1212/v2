@@ -3,18 +3,15 @@
   export let hasNoiseBackground = false;
 </script>
 
-<div class="glitch-wrapper screen">
-  <div class="text-wrapper">
-    <span
-      data-time={text}
-      class="text {hasNoiseBackground ? 'noise-background' : ''}">{text}</span
-    >
-  </div>
+<div class="text-wrapper">
+  <span
+    class="text {hasNoiseBackground ? 'noise-background' : ''}"
+    data-time={text}>{text}</span
+  >
 </div>
 
 <style lang="scss">
-  // @import url("https://fonts.googleapis.com/css?family=Reenie+Beanie");
-  $bg-color: rgba(0, 0, 0, 0.2);
+  // $bg-color: #111;
   // $txt-color: #fff;
 
   $color-c1: magenta;
@@ -26,9 +23,79 @@
   $lay-c1: 2;
   $lay-c2: 2;
 
-  // ------------------------------------------------------------
-  // animation
-  // ------------------------------------------------------------
+  //--------------------------------------------
+  // Main
+  // ------------------------------------------
+  // reset
+  *,
+  *:before,
+  *:after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    user-select: none;
+  }
+
+  // --------------------------------------------------------------
+
+  .text-wrapper {
+    // Glitch
+    transform: skewX(0deg) scaleY(1);
+    animation: clock-bag 4s linear infinite;
+
+    // Core
+    display: inline-block;
+    text-align: center;
+
+    /** removable params */
+    // background: $bg-color;
+    // color: $txt-color;
+    // font-family: "Lato", sans-serif;
+    // font-weight: 700;
+    // font-size: 128px;
+    // line-height: 1;
+
+    & > .text {
+      display: block;
+      position: relative;
+
+      &:before,
+      &:after {
+        // Glitch
+        display: block;
+        content: attr(data-time);
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+
+        /** removable params */
+        // color: $txt-color;
+        // background: $bg-color;
+      }
+
+      &:before {
+        // Glitch
+        left: -($offset-c2 * 1px);
+        text-shadow: $lay-c2 * 1px 0 $color-c2;
+        animation: c2 1s infinite linear alternate-reverse;
+      }
+
+      &:after {
+        // Glitch
+        left: $offset-c1 * 1px;
+        text-shadow: -($lay-c1 * 1px) 0 $color-c1;
+        animation: c1 2s infinite linear alternate-reverse;
+      }
+    }
+  }
+
+  // --------------------------------------------------------------------
+  // Animation
+  // --------------------------------------------------------------------
+
   // animation
   @function _random($val) {
     @return random() * $val + 1;
@@ -111,82 +178,6 @@
     }
     100% {
       background-position: 0 -32px;
-    }
-  }
-
-  // ------------------------------------------------------------
-  // style
-  // ------------------------------------------------------------
-  .glitch-wrapper {
-    // background: $bg-color;
-    // color: $txt-color;
-    display: inline-block;
-    // font-family: "Reenie Beanie";
-    &:before {
-      position: absolute;
-      z-index: 999999;
-      content: "";
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-    }
-  }
-
-  .screen {
-    position: relative;
-    z-index: 1;
-  }
-
-  .text-wrapper {
-    z-index: 9;
-    text-align: center;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    cursor: default;
-    transform: skewX(0deg) scaleY(1);
-    animation: clock-bag 4s linear infinite;
-    // font-family: "Reenie Beanie";
-  }
-
-  .is-off {
-    animation: is-off 2s linear infinite !important;
-  }
-
-  .noise-background {
-    &:before,
-    &after {
-      background: $bg-color;
-    }
-  }
-  .text {
-    // font-family: "Reenie Beanie";
-    display: inline-block;
-    // font-size: 5rem;
-    &:before,
-    &:after {
-      display: block;
-      content: attr(data-time);
-      position: absolute;
-      top: 0;
-      // color: $txt-color;
-      // background: $bg-color;
-      width: 100%;
-      clip: rect(0, 100%, 0, 0);
-      // font-family: "Reenie Beanie";
-    }
-    &:before {
-      left: -($offset-c2) px;
-      text-shadow: ($lay-c2) px 0 $color-c2;
-      animation: c2 1s infinite linear alternate-reverse;
-    }
-    &:after {
-      left: ($offset-c1) px;
-      text-shadow: -($lay-c1) px 0 $color-c1;
-      animation: c1 2s infinite linear alternate-reverse;
     }
   }
 </style>
