@@ -21,7 +21,7 @@
       {/each}
     </div>
   </div>
-  <div class="image-container">
+  <div>
     <a href={externalUr}>
       <img class="image" src={imgSrc} alt="img of project1" />
     </a>
@@ -33,31 +33,24 @@
   </div>
   <div class="tags-container">
     {#each tags as tag}
-      <span>{tag}</span>
+      <span class="tag">{tag}</span>
     {/each}
   </div>
 </div>
 
 <style lang="scss">
   .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    justify-items: center;
     gap: 0.5rem;
     padding: 1rem;
-  }
-
-  .image-container {
-    // width: 100%;
   }
 
   .description-container {
     padding: 2rem;
     border: solid 1px var(--magenta-transparent-05);
     background: var(--magenta-transparent-01);
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: 1rem;
     width: 100%;
   }
@@ -65,8 +58,11 @@
   .tags-container {
     display: flex;
     justify-content: center;
-    gap: 2rem;
     color: var(--yellow-transparent-05);
+  }
+
+  .tag {
+    padding: 0 0.5rem;
   }
 
   .image {
