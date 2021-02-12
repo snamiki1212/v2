@@ -12,8 +12,8 @@
 
 <div class="container">
   <div class="header-container">
-    <span class="header-text">{name}</span>
-    <div>
+    <div class="header-text">{name}</div>
+    <div class="header-icon-container">
       {#each metaList as meta}
         <a href={meta.url} class="header-icon">
           <Icon type={meta.type} />
@@ -44,12 +44,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    gap: 0.7rem;
+    gap: 0.5rem;
     padding: 1rem;
   }
 
   .image-container {
-    width: 100%;
+    // width: 100%;
   }
 
   .description-container {
@@ -74,10 +74,15 @@
   }
 
   .header-container {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    justify-items: center;
     align-items: center;
     gap: 2rem;
+    width: 100%;
+    & > div:nth-child(1) {
+      grid-column-start: 2;
+    }
   }
 
   .header-text {
@@ -85,6 +90,10 @@
     font-family: "Limelight";
     font-size: 2.5rem;
     color: var(--magenta-transparent-05);
+  }
+
+  .header-icon-container {
+    margin-left: auto;
   }
   .header-icon {
     font-size: 1.5rem;

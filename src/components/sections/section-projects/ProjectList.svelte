@@ -49,24 +49,29 @@
   ];
 </script>
 
-{#each projectList as project}
-  <div class="wrapper">
-    <Project
-      name={project.name}
-      descriptions={project.descriptionList}
-      tags={project.tags}
-      metaList={project.metaList}
-      imgSrc={project.imgSrc}
-    />
-  </div>
-{/each}
+<div class="container">
+  {#each projectList as project}
+    <div class="inner-container">
+      <Project
+        name={project.name}
+        descriptions={project.descriptionList}
+        tags={project.tags}
+        metaList={project.metaList}
+        imgSrc={project.imgSrc}
+      />
+    </div>
+  {/each}
+</div>
 
 <style lang="scss">
-  .wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .container {
+    display: grid;
+    justify-items: center;
+    gap: 2rem;
+  }
+  .inner-container {
+    display: grid;
+    justify-items: center;
     border: 1px solid var(--magenta-transparent-05);
-    width: 100%;
   }
 </style>

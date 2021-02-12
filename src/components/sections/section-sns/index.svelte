@@ -55,11 +55,10 @@
 
   .section-sns {
     display: grid;
-    flex-direction: column;
     justify-content: space-between;
     gap: 2rem;
     position: fixed;
-    bottom: 10%;
+    bottom: 1.5rem;
     left: 1.5rem;
     z-index: 999; // NOTE: TOP position
     & > a {

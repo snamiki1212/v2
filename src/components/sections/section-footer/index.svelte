@@ -20,9 +20,8 @@
   .container {
     min-height: 50vh;
     background: var(--black-transparent-03);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: grid;
+    align-content: space-between;
   }
 
   .source {
@@ -48,8 +47,7 @@
   }
 
   .bottom-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    justify-items: center;
   }
 </style>
