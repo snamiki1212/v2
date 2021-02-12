@@ -19,7 +19,7 @@
 <style lang="scss">
   .container {
     min-height: 50vh;
-    background: var(--black);
+    background: var(--black-transparent-03);
     display: flex;
     flex-direction: column;
     justify-content: space-between;

@@ -1,7 +1,7 @@
 :root {
   /* base */
   --black: black;
-  --black-transparent-05: rgba(0, 0, 0);
+  --black-transparent-03: rgba(0, 0, 0, 0.3);
   --dark-transparent: #010101e7;
   --white: #ccd6f6;
   --gray-100: #8892b0;
