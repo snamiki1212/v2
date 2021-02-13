@@ -8,13 +8,17 @@
 
 Portfolio site ver2.
 
-Concept of this page is CyberPunk so using Glitch Effect and vivid CYMK colors.
+Concept of this page is CyberPunk so using [Glitch Effect](https://github.com/snamiki1212/example-glitch-effect) and vivid CYMK colors.
 
 ## Tech stacks
 
-- Svelte
-- TypeScript
-- SCSS
+- App
+  - Svelte
+  - TypeScript
+  - SCSS
+- Bundler: rollup.js
+- CI: GitHub Actions
+- Hosting: GitHub Pages
 
 ## Demo
 
@@ -39,7 +43,7 @@ $ yarn dev
 
 ## All Versions
 
-Here is a repository that is managing all version of my portfolio I've created.
+Here is a repository managing all version of my portfolio I've created.
 
 👉[GitHub - snamiki1212/snamiki1212.github.io](https://github.com/snamiki1212/snamiki1212.github.io)
 
