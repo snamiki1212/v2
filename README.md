@@ -1,6 +1,6 @@
 <div align="center">
 <a href="https://snamiki1212.github.io/v2/">
-<img src="https://user-images.githubusercontent.com/26793088/107836554-73a6f700-6d52-11eb-8a3d-6a7a0cf6e383.gif" alt="main v2 video">
+<img src="https://user-images.githubusercontent.com/26793088/107836554-73a6f700-6d52-11eb-8a3d-6a7a0cf6e383.gif" alt="main v2 video" width=99999>
 </a>
 </div>
 
