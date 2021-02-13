@@ -9,14 +9,16 @@
   <div>
     <Subtitle num={1} text="About me" />
   </div>
-  <div>
-    <Avator />
-  </div>
-  <div>
-    <Description />
-  </div>
-  <div>
-    <TagList />
+  <div class="body">
+    <div>
+      <Avator />
+    </div>
+    <div>
+      <Description />
+    </div>
+    <div>
+      <TagList />
+    </div>
   </div>
 </div>
 
@@ -24,12 +26,15 @@
   .container {
     display: grid;
     justify-items: center;
+    gap: 0.5rem;
+  }
+  .body {
+    display: grid;
+    justify-items: center;
     gap: 1.5rem;
-    padding: 2rem;
+    padding: 3rem;
     margin: 0 auto;
-
     border: 1px solid var(--yellow-transparent-08);
-
     position: relative;
     &:before {
       position: absolute;
