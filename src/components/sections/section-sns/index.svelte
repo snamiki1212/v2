@@ -18,41 +18,6 @@
   // TODO: save fontawesome in assets
   @import url("https://pro.fontawesome.com/releases/v5.10.0/css/fontawesome.css");
 
-  @keyframes easeanime {
-    0% {
-      transform: translateX(9999px);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
-
-  .hidden {
-    visibility: hidden;
-  }
-
-  .ease-in {
-    animation: easeanime 1s ease 0s;
-    color: red;
-  }
-
-  @keyframes fadeInDown {
-    from {
-      opacity: 0;
-      transform: translate3d(0, -30%, 0);
-    }
-
-    to {
-      opacity: 1;
-      transform: translate3d(0, 0, 0);
-    }
-  }
-
-  .fadeInDown {
-    // animation-name: fadeInDown;
-    animation: fadeInDown 1s;
-  }
-
   .section-sns {
     display: grid;
     justify-content: space-between;
@@ -83,5 +48,16 @@
     }
 
     animation: fadeInDown 1s;
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translate3d(0, -30%, 0);
+      }
+
+      to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+      }
+    }
   }
 </style>
