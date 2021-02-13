@@ -7,7 +7,7 @@
 
 <div class="container">
   <a href={`mailto:${mail}`} class="text">
-    <GlitchText text="👉 contact me" /><br />
+    <GlitchText text="🐱 Contact Me" />
   </a>
 </div>
 
@@ -22,5 +22,11 @@
     font-family: "Reenie Beanie";
     font-weight: 900;
     font-size: 2.5rem;
+    color: var(--yellow);
+    border: 1px solid var(--magenta);
+    background: var(--dark-transparent);
+    padding: 0.2rem 1rem;
+    border-radius: 40px;
+    z-index: 999999;
   }
 </style>
