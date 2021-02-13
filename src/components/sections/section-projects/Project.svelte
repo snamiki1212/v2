@@ -59,6 +59,7 @@
 
   .tags-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     color: var(--yellow-transparent-05);
   }
