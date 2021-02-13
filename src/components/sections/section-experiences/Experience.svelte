@@ -6,10 +6,11 @@
   export let paragraphs: string[];
   export let company: string | undefined;
   export let companyUrl: string | undefined;
+  const isFreelance = company === undefined && companyUrl === undefined;
 </script>
 
 <div>
-  {#if company === undefined && companyUrl === undefined}
+  {#if isFreelance}
     {position} as Freelance
   {:else}
     {position} <a href={companyUrl}>@{company}</a>
