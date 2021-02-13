@@ -12,6 +12,8 @@ jobs:
     steps:
       # Check out the current repository code
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
 
       # Setup node (REF: https://github.com/actions/setup-node#usage )
       - uses: actions/setup-node@v1
