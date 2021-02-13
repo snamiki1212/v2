@@ -20,7 +20,7 @@
   .container {
     padding: 5rem 5rem 0 5rem;
     min-height: 50vh;
-    background: var(--black-transparent-03);
+    background: var(--black);
     display: grid;
     align-content: space-between;
   }
