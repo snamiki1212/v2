@@ -15,9 +15,6 @@
 </div>
 
 <style lang="scss">
-  // TODO: save fontawesome in assets
-  @import url("https://pro.fontawesome.com/releases/v5.10.0/css/fontawesome.css");
-
   .section-sns {
     display: grid;
     justify-content: space-between;
