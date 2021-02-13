@@ -18,6 +18,7 @@
 
 <style lang="scss">
   .container {
+    padding: 5rem 5rem 0 5rem;
     min-height: 50vh;
     background: var(--black-transparent-03);
     display: grid;
@@ -35,7 +36,6 @@
   }
 
   .catchcopy {
-    margin: 5rem;
     font-family: "Reenie Beanie";
     font-size: 3rem;
     opacity: 0.7;
@@ -43,7 +43,7 @@
 
   .horizon {
     border: 1px solid var(--magenta-transparent-05);
-    width: 80%;
+    width: 100%;
   }
 
   .bottom-container {
