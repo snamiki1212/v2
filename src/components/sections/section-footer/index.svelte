@@ -1,4 +1,5 @@
 <script lang="ts">
+  // TODO: move to constants
   const githubUrlOfThisSite = "https://github.com/snamiki1212/v2";
   const copyright = "© 2021 NamikiShun a.k.a Nash";
 </script>

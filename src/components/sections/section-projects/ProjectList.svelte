@@ -1,6 +1,7 @@
 <script lang="ts">
   import Project from "./Project.svelte";
 
+  // TODO: move to constants
   const projectList = [
     {
       name: "Plangoab",
