@@ -12,7 +12,7 @@
   $size: 15rem;
 
   .avator {
-    mix-blend-mode: screen;
+    mix-blend-mode: luminosity;
     opacity: 0.99;
   }
 
