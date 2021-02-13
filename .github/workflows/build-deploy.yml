@@ -39,6 +39,9 @@ jobs:
       #   env:
       #     CI: true
 
+      - name: Type Check
+        run: yarn svelte-check --output machine
+
       - name: Build
         run: yarn run build
 

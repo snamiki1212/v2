@@ -15,7 +15,7 @@
     externalLink: faExternalLinkAlt,
   };
 
-  const FontAwesome = table[type as Icon];
+  const FontAwesome = table[type];
 </script>
 
 <Fa icon={FontAwesome} />
