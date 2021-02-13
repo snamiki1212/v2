@@ -12,15 +12,11 @@ jobs:
     steps:
       # Check out the current repository code
       - uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
 
       # Setup node (REF: https://github.com/actions/setup-node#usage )
       - uses: actions/setup-node@v1
         with:
           node-version: 12.x
-      - name: pre-check1
-        run: ls -l public && cat public/index.html
 
       - name: Set yarn-cache-directory path
         id: yarn-cache-dir
@@ -37,15 +33,6 @@ jobs:
 
       - name: Install packages
         run: yarn install --frozen-lockfile
-
-      - name: check1
-        run: ls -l
-
-      - name: check2
-        run: ls -l public
-
-      - name: check3
-        run: cat public/index.html
 
       # - name: Test
       #   run: yarn test --color
