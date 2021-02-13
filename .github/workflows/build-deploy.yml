@@ -19,6 +19,8 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12.x
+      - name: pre-check1
+        run: ls -l public && cat public/index.html
 
       - name: Set yarn-cache-directory path
         id: yarn-cache-dir
