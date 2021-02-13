@@ -6,16 +6,16 @@
   import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons/faExternalLinkAlt";
 
   type Icon = "github" | "linkedin" | "twitter" | "externalLink";
-  export let type: Icon = "github";
+  export let type: string = "github";
 
-  const table = {
+  const table: { [key in Icon]: any } = {
     github: faGithub,
     twitter: faTwitter,
     linkedin: faLinkedinIn,
     externalLink: faExternalLinkAlt,
   };
 
-  const FontAwesome = table[type];
+  const FontAwesome = table[type as Icon];
 </script>
 
 <Fa icon={FontAwesome} />

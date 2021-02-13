@@ -4,7 +4,7 @@
   export let name: string;
   export let descriptions: string[];
   export let tags: string[];
-  export let metaList: Array<{ url: string; type: "github" | "externalLink" }>;
+  export let metaList: Array<{ url: string; type: string }>;
   export let imgSrc: string;
   const externalUr =
     metaList.find((meta) => meta.type === "externalLink")?.url ?? "#";
