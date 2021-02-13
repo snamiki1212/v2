@@ -4,6 +4,14 @@
 </script>
 
 <div>
-  <Subtitle num={3} text="Projects" />
+  <div class="subtitle">
+    <Subtitle num={3} text="Projects" />
+  </div>
   <ProjectList />
 </div>
+
+<style lang="scss">
+  .subtitle {
+    color: var(--magenta-transparent-05);
+  }
+</style>

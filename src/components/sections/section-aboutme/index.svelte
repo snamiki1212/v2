@@ -6,7 +6,7 @@
 </script>
 
 <div class="container">
-  <div>
+  <div class="subtitle">
     <Subtitle num={1} text="About me" />
   </div>
   <div class="body">
@@ -25,9 +25,13 @@
 <style lang="scss">
   .container {
     display: grid;
-    justify-items: center;
     gap: 0.5rem;
   }
+
+  .subtitle {
+    color: var(--yellow-transparent-05);
+  }
+
   .body {
     display: grid;
     justify-items: center;

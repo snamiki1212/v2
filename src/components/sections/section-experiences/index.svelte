@@ -28,6 +28,7 @@
   }
   .subtitle {
     margin-left: auto;
+    color: var(--cyan-transparent-05);
   }
   .content {
     padding: 2rem;

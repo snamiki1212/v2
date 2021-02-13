@@ -11,7 +11,6 @@
 <style lang="scss">
   .subtitle {
     width: 100%;
-    color: var(--cyan-transparent-05);
   }
 
   .number {

@@ -4,7 +4,7 @@
 </script>
 
 <div class="container">
-  <div>
+  <div class="subtitle">
     <Subtitle num={4} text="Contact me" />
   </div>
   <div class="container__body">
@@ -22,6 +22,10 @@
       text-align: center;
       font-size: 1.5rem;
     }
+  }
+
+  .subtitle {
+    color: var(--cyan-transparent-05);
   }
 
   .link {
