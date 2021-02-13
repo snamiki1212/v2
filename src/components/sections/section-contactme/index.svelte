@@ -1,12 +1,10 @@
 <script lang="ts">
   import GlitchText from "components/parts/GlitchText/index.svelte";
-
-  // TODO: move to constraint
-  const mail = "snamiki1212@gmail.com";
+  import { MY_EMAIL } from "constants/index";
 </script>
 
 <div class="container">
-  <a href={`mailto:${mail}`} class="text">
+  <a href={`mailto:${MY_EMAIL}`} class="text">
     <GlitchText text="🐱 Contact Me" />
   </a>
 </div>
