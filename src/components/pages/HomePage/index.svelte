@@ -12,6 +12,7 @@
   // animations
   import IntersectionObserver from "components/parts/IntersectionObserver/index.svelte";
   const top = -200;
+  let contactMeIntersecting = false;
 </script>
 
 <body>
@@ -21,11 +22,11 @@
   <Layout>
     <SectionHero />
 
-    <IntersectionObserver let:intersecting {top} once={true}>
-      <div class:fade-out={!intersecting}>
-        <ContactMe />
-      </div>
-    </IntersectionObserver>
+    <IntersectionObserver
+      bind:intersecting={contactMeIntersecting}
+      {top}
+      once={true}
+    />
 
     <div class="item">
       <IntersectionObserver let:intersecting {top} once={true}>
@@ -59,6 +60,14 @@
       </IntersectionObserver>
     </div>
   </Layout>
+
+  <div class:fade-out={!contactMeIntersecting}>
+    <!--
+    Note: Write this contact-me under some sections
+          because it should display on all of contents by stack context logic.
+    -->
+    <ContactMe />
+  </div>
 
   <SectionFooter />
 </body>
