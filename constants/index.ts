@@ -1,5 +1,6 @@
 // SNS
 export const MY_EMAIL = "snamiki1212@gmail.com";
+export const MY_TWITTER_ACCOUNT = "@snamiki1212";
 export const MY_TWITTER_URL = "https://twitter.com/snamiki1212";
 export const MY_GITHUB_URL = "https://github.com/snamiki1212";
 export const MY_LINKEDIN_URL = "https://www.linkedin.com/in/snamiki1212";
