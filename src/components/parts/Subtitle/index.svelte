@@ -13,6 +13,7 @@
     width: 100%;
     color: var(--cyan-transparent-05);
   }
+
   .number {
     font-size: 1.5rem;
     font-family: "New Rocker";

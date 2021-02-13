@@ -59,15 +59,18 @@
       </IntersectionObserver>
     </div>
   </Layout>
+
   <SectionFooter />
 </body>
 
 <style lang="scss">
-  // NOTE:
-  // svelte's transition is fired by creating/removing DOM
-  // but it has performance problem and design gattling.
-  // this is why I use vanillla css animation.
-  // >> REF:https://stackoverflow.com/a/59093272/8842333
+  /**
+  ** NOTE:
+  ** svelte's transition is called when creating/removing DOM
+  ** but it has performance problem and design gattling.
+  ** This is why I use vanillla css animation.
+  ** >> REF:https://stackoverflow.com/a/59093272/8842333
+  */
   div {
     transition: 0.5s;
   }
