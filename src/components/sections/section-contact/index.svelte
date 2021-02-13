@@ -8,7 +8,9 @@
     <Subtitle num={4} text="Contact me" />
   </div>
   <div class="container__body">
-    <a href={`mailto:${MY_EMAIL}`} class="link">💁‍♂️✉️</a>
+    <a href={`mailto:${MY_EMAIL}`} class="link"
+      >💁‍♂️<span class="slide">✉️</span></a
+    >
   </div>
 </div>
 
@@ -35,5 +37,21 @@
     border-radius: 10px;
     font-size: 3rem;
     text-decoration: none;
+  }
+  .slide {
+    position: absolute;
+    animation: 1s _slide ease-in infinite;
+    @keyframes _slide {
+      from {
+        opacity: 0;
+      }
+      20% {
+        opacity: 1;
+      }
+      to {
+        opacity: 0;
+        transform: translateX(20px);
+      }
+    }
   }
 </style>

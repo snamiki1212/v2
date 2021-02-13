@@ -28,5 +28,9 @@
     padding: 0.2rem 1rem;
     border-radius: 40px;
     z-index: 999999;
+    &:hover {
+      opacity: 1;
+      font-size: 3rem;
+    }
   }
 </style>
