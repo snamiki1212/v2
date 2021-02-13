@@ -1,8 +1,9 @@
 <script lang="ts">
   import Subtitle from "components/parts/Subtitle/index.svelte";
+  import { EMAIL } from "constants/index";
 
   // TODO: move to constants
-  const mail = "snamiki1212@gmail.com";
+  const mail = EMAIL;
 </script>
 
 <div class="container">

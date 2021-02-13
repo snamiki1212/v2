@@ -10,10 +10,11 @@
     "baseUrl": ".",
     "paths": {
       "*": ["@types/*"],
-      "components/*": ["./src/components/*"]
+      "components/*": ["./src/components/*"],
+      "constants/*": ["./constants/*"]
     }
   },
   "extends": "@tsconfig/svelte/tsconfig.json",
-  "include": ["src/**/*", "src/node_modules"],
+  "include": ["src/**/*", "src/node_modules", "constants/**/*"],
   "exclude": ["node_modules/*", "__sapper__/*", "public/*"],
 }
