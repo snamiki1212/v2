@@ -10,12 +10,18 @@ export const PROJECT_LIST = [
   {
     name: "Plangoab",
     descriptionList: [
-      "[UNDER CONSTRUCTION]",
-      "A Web app calendar to help a person who wants to plan to go abroad because of studying or working.",
-      "Generate some going abroad plan and you are able to customize by yourself.",
-      "Calculate the period about some visas which are study visa, working holiday visa or work visa and so on.",
+      "A web app calendar for a person who wants to plan to go abroad because of studying, working, or everything.",
+      "This app's main feature is managing your schedule through generating plans and customizing schedules by yourself.",
+      "Why I create this app is to reduce the time we have to think about plans especially being careful of a visa problem, so I believe this app is capable of solving this issue by creating schedules automatically.",
     ],
-    tags: ["React", "Redux", "ReduxToolkit"],
+    tags: [
+      "React",
+      "Redux",
+      "Redux Toolkit",
+      "TypeScript",
+      "styled-components",
+      "FullCalendar",
+    ],
     metaList: [
       { type: "github", url: "https://github.com/snamiki1212/plangoab" },
       {
@@ -27,8 +33,17 @@ export const PROJECT_LIST = [
   },
   {
     name: "Lunash",
-    descriptionList: ["A web blog developed and designed from scratch."],
-    tags: ["React", "Gatsby.js"],
+    descriptionList: [
+      "A web-blog developed and designed from scratch by myself.",
+    ],
+    tags: [
+      "React",
+      "Gatsby.js",
+      "TypeScript",
+      "styled-components",
+      "Netlify",
+      "Figma",
+    ],
     metaList: [
       { type: "github", url: "https://github.com/snamiki1212/myblog" },
       {
@@ -40,7 +55,9 @@ export const PROJECT_LIST = [
   },
   {
     name: "Portfolio v2",
-    descriptionList: ["A web blog developed and designed from scratch."],
+    descriptionList: [
+      "A portfolio site developed and designed from scratch by myself.",
+    ],
     tags: ["Svelte", "TypeScript", "SCSS"],
     metaList: [
       { type: "github", url: "https://github.com/snamiki1212/v2" },
