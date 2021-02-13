@@ -46,6 +46,12 @@ jobs:
       - name: check1
         run: ls -l
 
+      - name: check2
+        run: ls -l public
+
+      - name: check3
+        run: cat public/index.html
+
       # - name: Test
       #   run: yarn test --color
       #   env:
