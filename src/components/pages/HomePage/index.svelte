@@ -15,7 +15,7 @@
   let contactMeIntersecting = false;
 </script>
 
-<body>
+<div>
   <SectionSNS />
 
   <!--  -->
@@ -70,7 +70,7 @@
   </div>
 
   <SectionFooter />
-</body>
+</div>
 
 <style lang="scss">
   /**
