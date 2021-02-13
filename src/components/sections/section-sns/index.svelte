@@ -1,20 +1,20 @@
 <script lang="ts">
   import Icon from "components/parts/Icon/index.svelte";
-
-  // TODO: move to constants
-  const twitterUrl = "https://twitter.com/snamiki1212";
-  const githubUrl = "https://github.com/snamiki1212";
-  const linkedinUrl = "https://www.linkedin.com/in/snamiki1212";
+  import {
+    MY_GITHUB_URL,
+    MY_LINKEDIN_URL,
+    MY_TWITTER_URL,
+  } from "constants/index";
 </script>
 
 <div class="section-sns">
-  <a href={twitterUrl}>
+  <a href={MY_TWITTER_URL}>
     <Icon type="twitter" />
   </a>
-  <a href={githubUrl}>
+  <a href={MY_GITHUB_URL}>
     <Icon type="github" />
   </a>
-  <a href={linkedinUrl}>
+  <a href={MY_LINKEDIN_URL}>
     <Icon type="linkedin" />
   </a>
 </div>

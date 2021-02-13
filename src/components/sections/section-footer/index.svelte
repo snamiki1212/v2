@@ -1,18 +1,16 @@
 <script lang="ts">
-  // TODO: move to constants
-  const githubUrlOfThisSite = "https://github.com/snamiki1212/v2";
-  const copyright = "© 2021 NamikiShun a.k.a Nash";
+  import { COPYRIGHT, THIS_GITHUB_URL } from "constants/index";
 </script>
 
 <div class="container">
   <div class="catchcopy">Opportunity only knocks once.</div>
   <div class="bottom-container">
     <div class="source">
-      This site is managed in here <a href={githubUrlOfThisSite}>GitHub</a>.
+      This site is managed in here <a href={THIS_GITHUB_URL}>GitHub</a>.
     </div>
     <hr class="horizon" />
     <div class="copyright">
-      <div>{copyright}</div>
+      <div>{COPYRIGHT}</div>
     </div>
   </div>
 </div>

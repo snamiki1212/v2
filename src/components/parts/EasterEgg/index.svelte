@@ -1,6 +1,5 @@
 <script lang="ts">
-  // TODO: move to constants
-  const GITHUB_URL = "https://github.com/snamiki1212/v2";
-  const msg = `🦊🐳🐱🦊🐳🐱🦊🐳🐱\n🦊🐳🐱🦊🐳🐱🦊🐳🐱\n🦊🐳🐱🦊🐳🐱🦊🐳🐱\n\nHi :)\n You want to know more?\n  Check code!\n   => ${GITHUB_URL}\n\n🦊🐳🐱🦊🐳🐱🦊🐳🐱\n🦊🐳🐱🦊🐳🐱🦊🐳🐱\n🦊🐳🐱🦊🐳🐱🦊🐳🐱\n\n`;
+  import { THIS_GITHUB_URL } from "constants/index";
+  const msg = `🦊🐳🐱🦊🐳🐱🦊🐳🐱\n🦊🐳🐱🦊🐳🐱🦊🐳🐱\n🦊🐳🐱🦊🐳🐱🦊🐳🐱\n\nHi :)\n You want to know more?\n  Check code!\n   => ${THIS_GITHUB_URL}\n\n🦊🐳🐱🦊🐳🐱🦊🐳🐱\n🦊🐳🐱🦊🐳🐱🦊🐳🐱\n🦊🐳🐱🦊🐳🐱🦊🐳🐱\n\n`;
   console.log(msg);
 </script>

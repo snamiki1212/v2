@@ -1,9 +1,7 @@
 <script lang="ts">
   import Subtitle from "components/parts/Subtitle/index.svelte";
   import ExperienceList from "./ExperienceList.svelte";
-
-  // TODO: move to constants
-  const linkedinUrl = "https://www.linkedin.com/in/snamiki1212";
+  import { MY_LINKEDIN_URL } from "constants/index";
 </script>
 
 <div class="container">
@@ -17,7 +15,7 @@
 
   <div class="bottom">
     <span>
-      Jump to <a href={linkedinUrl}>linkedin</a> if you want to know more!
+      Jump to <a href={MY_LINKEDIN_URL}>linkedin</a> if you want to know more!
     </span>
   </div>
 </div>

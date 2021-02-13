@@ -1,17 +1,9 @@
 <script lang="ts">
-  // TODO: move to constants
-  const tags = [
-    "TypeScript",
-    "React / React Native / Next.js",
-    "Node.js / Express",
-    "PHP / Laravel",
-    "Ruby on Rails",
-    "Elixir / Phoenix",
-  ];
+  import { MY_TECH_TAGS } from "constants/index";
 </script>
 
 <ul class="aboutme-tags">
-  {#each tags as tag}
+  {#each MY_TECH_TAGS as tag}
     <li class="aboutme-tags__item">{tag}</li>
   {/each}
 </ul>
