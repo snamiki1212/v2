@@ -18,7 +18,6 @@
         (entries) => {
           intersecting = entries[0].isIntersecting;
           if (intersecting) {
-            console.log("intersecting", container);
             container.classList.toggle("hidden");
           }
           if (intersecting && once) {

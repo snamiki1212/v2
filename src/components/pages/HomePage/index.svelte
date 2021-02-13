@@ -1,5 +1,6 @@
 <script lang="typescript">
   import SectionSNS from "components/sections/section-sns/index.svelte";
+  import ContactMe from "components/sections/section-contactme/index.svelte";
   import SectionHero from "components/sections/section-hero/index.svelte";
   import SectionAboutMe from "components/sections/section-aboutme/index.svelte";
   import SectionExperiences from "components/sections/section-experiences/index.svelte";
@@ -15,8 +16,16 @@
 
 <body>
   <SectionSNS />
+
+  <!--  -->
   <Layout>
     <SectionHero />
+
+    <IntersectionObserver let:intersecting {top} once={true}>
+      <div class:fade-out={!intersecting}>
+        <ContactMe />
+      </div>
+    </IntersectionObserver>
 
     <div class="item">
       <IntersectionObserver let:intersecting {top} once={true}>

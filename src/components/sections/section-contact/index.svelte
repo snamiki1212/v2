@@ -10,7 +10,7 @@
     <Subtitle num={4} text="Contact me" />
   </div>
   <div class="container__body">
-    <a href={`mailto:${mail}`}> 👉Contact me👈 </a>
+    <a href={`mailto:${mail}`} class="link">💁‍♂️✉️</a>
   </div>
 </div>
 
@@ -24,5 +24,14 @@
       text-align: center;
       font-size: 1.5rem;
     }
+  }
+
+  .link {
+    padding: 1rem 4rem;
+    border: 1px solid lightblue;
+    background: var(--cyan-transparent-05);
+    border-radius: 10px;
+    font-size: 3rem;
+    text-decoration: none;
   }
 </style>
