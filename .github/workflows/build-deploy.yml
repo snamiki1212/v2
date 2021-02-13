@@ -35,15 +35,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
 
-      - name: Cache Public Folder
-        uses: actions/cache@v1
-        id: svelte-public-folder
-        with:
-          path: public/
-          key: ${{ runner.os }}-public-svelte
-          restore-keys: |
-            ${{ runner.os }}-public-svelte
-
       - name: Install packages
         run: yarn install --frozen-lockfile
 
