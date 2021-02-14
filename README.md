@@ -8,7 +8,7 @@
 
 Portfolio site ver2.
 
-Concept of this page is CyberPunk so using [Glitch Effect](https://github.com/snamiki1212/example-glitch-effect) and vivid CYMK colors.
+Page concept is CyberPunk so using [Glitch Effect](https://github.com/snamiki1212/example-glitch-effect) and vivid CYMK colors.
 
 ## Tech stacks
 
@@ -16,13 +16,14 @@ Concept of this page is CyberPunk so using [Glitch Effect](https://github.com/sn
   - Svelte
   - TypeScript
   - SCSS
-- Bundler: rollup.js
-- CI: GitHub Actions
-- Hosting: GitHub Pages
+- CI/CD
+  - rollup.js
+  - GitHub Actions
+  - GitHub Pages
 
 ## Demo
 
-=> [Go to page!](https://snamiki1212.github.io/v2/)
+[👉Go to page!](https://snamiki1212.github.io/v2/)
 
 ## Install
 
