@@ -28,7 +28,7 @@ export const EXPERIENCES_LIST = [
     to: "2018 Dec",
     type: "Full-time",
     paragraphs: [
-      "Developed web services using PHP/Laravel, jQuery and smartphone game using Elixir/Phoenix",
+      "Developed web services using PHP/Laravel + jQuery and smartphone game backend using Elixir/Phoenix",
       "Collaborated with team members as a leader to make a comfortable environment",
     ],
   },
@@ -76,6 +76,7 @@ export const PROJECT_LIST = [
     name: "Lunash",
     descriptionList: [
       "A web-blog developed and designed from scratch by myself.",
+      "This site is aimed that viewers could read articles easily.",
     ],
     tags: [
       "React",
@@ -98,6 +99,7 @@ export const PROJECT_LIST = [
     name: "Portfolio v2",
     descriptionList: [
       "A portfolio site developed and designed from scratch by myself.",
+      "Page concept is cyber punk so using glitch-effect and vivid CYMK colors.",
     ],
     tags: ["Svelte", "TypeScript", "SCSS"],
     metaList: [
