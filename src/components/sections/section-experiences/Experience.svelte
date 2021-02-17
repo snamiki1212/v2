@@ -9,15 +9,15 @@
   const isFreelance = company === undefined && companyUrl === undefined;
 </script>
 
-<div>
+<p class="position">
   {#if isFreelance}
     {position} as Freelance
   {:else}
     {position} <a href={companyUrl}>@{company}</a>
   {/if}
-</div>
-<div>🕓{from} ~ {to}</div>
-<div>👔{type}</div>
+</p>
+<p class="period">🕓{from} ~ {to}</p>
+<p class="type">👔{type}</p>
 <ul class="paragraphList">
   {#each paragraphs as paragraph}
     <li class="paragraphItem">
@@ -27,6 +27,17 @@
 </ul>
 
 <style lang="scss">
+  .position {
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+
+  .period {
+    opacity: 0.8;
+  }
+  .type {
+    opacity: 0.8;
+  }
   .paragraphList {
     display: grid;
     gap: 0.5rem;

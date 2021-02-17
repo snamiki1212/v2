@@ -14,7 +14,7 @@ export const EXPERIENCES_LIST = [
     companyUrl: undefined,
     from: "2019 Jan",
     to: "Present",
-    type: "Part-time",
+    type: "Part-time (simultaneously some projects)",
     paragraphs: [
       "Collaborated with more than each 5 companies",
       "Developed a variety of apps using React, React Native, Next.js, TypeScript, Node.js, Firebase and Ruby on Rails",
