@@ -9,7 +9,7 @@ export const THIS_GITHUB_URL = "https://github.com/snamiki1212/v2";
 // Params
 export const EXPERIENCES_LIST = [
   {
-    position: "Fullstack Developer",
+    position: "Full Stack Developer",
     company: undefined,
     companyUrl: undefined,
     from: "2019 Jan",
@@ -21,15 +21,15 @@ export const EXPERIENCES_LIST = [
     ],
   },
   {
-    position: "Backend Developer",
+    position: "Back-end Developer",
     company: "Arsaga Partners",
     companyUrl: "https://www.arsaga.jp",
     from: "2017 Jun",
     to: "2018 Dec",
     type: "Full-time",
     paragraphs: [
-      "Developed web services using PHP/Laravel + jQuery and smartphone game backend using Elixir/Phoenix",
-      "Collaborated with team members as a leader to make a comfortable environment",
+      "Developed web services using PHP/Laravel + jQuery and a smartphone game using Elixir/Phoenix",
+      "Collaborated with team members as a leader to make a comfortable team environment",
     ],
   },
   {
@@ -41,7 +41,7 @@ export const EXPERIENCES_LIST = [
     type: "Full-time",
     paragraphs: [
       "Driven a project involving placeholders",
-      "Managed small team and teaching junior assistant members",
+      "Managed a small team and teaching junior assistant members",
       "Coordinated with a client about projects",
     ],
   },
@@ -52,8 +52,8 @@ export const PROJECT_LIST = [
     name: "Plangoab",
     descriptionList: [
       "A web app calendar for a person who wants to plan to go abroad because of studying, working, or everything.",
-      "This app's main feature is managing your schedule through generating plans and customizing schedules by yourself.",
-      "Why I create this app is to reduce the time we have to think about plans especially being careful of a visa problem, so I believe this app is capable of solving this issue by creating schedules automatically.",
+      "Features are managing your schedule, generating plans and customizing schedules by yourself.",
+      "Why I create this app is to reduce the time we have to think about plans especially being careful of a visa problem. I believe this app is capable of solving this issue.",
     ],
     tags: [
       "React",
@@ -99,7 +99,7 @@ export const PROJECT_LIST = [
     name: "Portfolio v2",
     descriptionList: [
       "A portfolio site developed and designed from scratch by myself.",
-      "Page concept is cyber punk so using glitch-effect and vivid CYMK colors.",
+      "Page concept is a Cyberpunk so using Glitch Effect and a vivid CYMK color pattern.",
     ],
     tags: ["Svelte", "TypeScript", "SCSS"],
     metaList: [
